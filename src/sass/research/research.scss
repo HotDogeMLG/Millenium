@@ -1,0 +1,14 @@
+.research {
+    margin: 110px 6px 0px 14px;
+
+    & p {
+        font-size: $font-size--tiny;
+        font-weight: 400;
+    }
+
+    &__heading {
+        font-size: $font-size--bigger-regular;
+        font-weight: 800;
+        margin: 0px 0px 30px 0px;
+    }
+}
