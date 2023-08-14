@@ -1,0 +1,42 @@
+.stage {
+    border-radius: 10px;
+    box-shadow: 0px 10px 60px 0px $color-main--transparent;
+    padding: 23px 12px 25px 12px;
+
+    & h3 {
+        margin: 0;
+        & span {
+            font-size: $font-size--tiny;
+            font-weight: 700;
+        }
+    }
+
+    & p {
+        font-size: $font-size--tiny;
+        font-weight: 400;
+    }
+
+    &__number {
+        display: inline-flex;
+        background-color: $color-stage-number;
+        width: 37px;
+        height: 37px;
+        border-radius: 50px;
+        align-items: center;
+        color: $color-bg;
+        font-size: $font-size--bigger-regular;
+        font-weight: 700;
+        justify-content: center;
+        align-items: center;
+        margin-right: 18px;
+    }
+}
+
+.main-body__stages {
+    margin: 7px;
+
+    & h2 {
+        font-size: $font-size--bigger-regular;
+        font-weight: 800;
+    }
+}
