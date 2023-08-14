@@ -1,0 +1,27 @@
+.single-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+        width: 340px;
+        margin-bottom: 28px;
+    }
+    & h3 {
+        font-size: $font-size--bigger-regular;
+        font-weight: 700;
+        align-self: flex-start;
+        margin: 0;
+    }
+    & ul {
+        margin: 17px 10px 39px 30px;
+        padding: 0px;
+
+        & li {
+            margin: 8px 0px;
+            list-style-image: url(./img/marker.svg);
+            font-size: $font-size--tiny;
+            font-weight: 400;
+        }
+    }
+}

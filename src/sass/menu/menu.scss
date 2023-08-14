@@ -1,0 +1,21 @@
+menu {
+    &__item_mobile{
+        display: block;
+    }
+
+    &__item {
+        display: none;
+    }
+
+    &__info_mobile {
+        margin-top: auto;
+        margin-bottom: 15vh;
+        font-size: 18px;
+        color: hsla(246, 93%, 66%, 1);
+        text-align: center;
+    }
+
+    &__info_mobile div:last-child {
+        margin-top: 32px;
+    }    
+}
