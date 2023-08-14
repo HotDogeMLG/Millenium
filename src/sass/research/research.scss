@@ -1,9 +1,16 @@
 .research {
-    margin: 110px 6px 0px 14px;
+    margin: 110px 6px 19px 14px;
 
     & p {
         font-size: $font-size--tiny;
         font-weight: 400;
+    }
+
+    & img {
+        display: block;
+        margin: 0px auto 70px auto;
+        width: 70%;
+        max-width: 450px;
     }
 
     &__heading {

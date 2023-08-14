@@ -11,6 +11,7 @@ import crmPNG from "./img/crm.png"
 import awardsPNG from "./img/awards.png"
 import certificate1PNG from "./img/certificate1.png"
 import certificate2PNG from "./img/certificate2.png"
+import researchPNG from "./img/research.png"
 
 const headerLogo = document.getElementById("header__logo")
 headerLogo.src = logo
@@ -43,7 +44,7 @@ const crm = document.getElementById("crm")
 crm.src = crmPNG
 
 
-//----------------------------------- Awards block -----------------------------------//
+//--------------------------------- Awards and research ---------------------------------//
 
 const awards = document.getElementById("awards-img")
 awards.src = awardsPNG
@@ -53,6 +54,9 @@ certificate1.src = certificate1PNG
 
 const certificate2 = document.getElementById("certificate2-img")
 certificate2.src = certificate2PNG
+
+const research = document.getElementById("research-img")
+research.src = researchPNG
 
 
 //----------------------------------- Buttons block -----------------------------------//
