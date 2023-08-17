@@ -1,12 +1,14 @@
 $color-main: hsla(246, 49%, 27%, 1);
 $color-main--transparent: hsla(246, 49%, 27%, 0.15);
-$color-light: hsla(246, 93%, 66%, 1);
+$color-light: hsl(246, 93%, 66%);
 $color-bg: hsl(0, 0%, 100%);
 $color-shadow: hsl(0, 0%, 0%);
 $color-header-border: hsl(0, 0%, 80%);
 $color-gray--dark: hsl(0, 0%, 62%);
 $color-awards: hsla(47, 80%, 70%, 1);
 $color-stage-number: hsl(155, 58%, 53%);
+$color-form-wrapper: hsl(218, 100%, 97%);
+$color-form-border: hsla(0, 0%, 100%, 0.4);
 
 $font-size--tiny: 12px;
 $font-size--small: 14px;

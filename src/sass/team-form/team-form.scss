@@ -1,0 +1,52 @@
+.team-form {
+    background-color: $color-light;
+    border-radius: 20px;
+    color: $color-bg;
+    padding-inline: 13px;
+    text-align: center;
+
+    & input {
+        display: block;
+        background-color: $color-light;
+        font-size: $font-size--tiny;
+        font-weight: 400;
+        border: none;
+        border-bottom: 2px solid $color-form-border;
+        margin: 30px auto 35px auto;
+        width: 90%;
+        height: 25px;
+        outline: none;
+        color: $color-bg;
+
+        &:focus {
+            border-bottom: 2px solid $color-bg;
+        }
+
+        &::placeholder {
+            color: $color-form-border;
+        }
+    }
+
+    & input[type="submit"] {
+        border-radius: 5px;
+        background-color: $color-bg;
+        color: $color-light;
+        font-size: $font-size--small;
+        font-weight: 700;
+        width: 268px;
+        height: 60px;
+        margin-top: 50px;
+    }
+
+    &__heading {
+        font-size: $font-size--bigger-regular;
+        font-weight: 700;
+        margin-top: 37px;
+    }
+
+    &__additional-info {
+        font-size: $font-size--tiny;
+        font-weight: 400;
+        margin: 21px 0px 35px 0px;
+    }
+}
