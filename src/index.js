@@ -12,6 +12,11 @@ import awardsPNG from "./img/awards.png"
 import certificate1PNG from "./img/certificate1.png"
 import certificate2PNG from "./img/certificate2.png"
 import researchPNG from "./img/research.png"
+import analysisPNG from "./img/analysis.png"
+import designPNG from "./img/design.png"
+import layoutPNG from "./img/layout.png"
+import cmsPNG from "./img/cms.png"
+import teamPNG from "./img/team.png"
 
 const headerLogo = document.getElementById("header__logo")
 headerLogo.src = logo
@@ -58,6 +63,27 @@ certificate2.src = certificate2PNG
 const research = document.getElementById("research-img")
 research.src = researchPNG
 
+
+//----------------------------------- Stages block -----------------------------------//
+
+const analysis = document.getElementById("analysis-img")
+analysis.src = analysisPNG
+
+const design = document.getElementById("design-img")
+design.src = designPNG
+
+const layout = document.getElementById("layout-img")
+layout.src = layoutPNG
+
+const cms = document.getElementById("cms-img")
+cms.src = cmsPNG
+
+
+//----------------------------------- Team block -----------------------------------//
+
+
+const team = document.getElementById("team-img")
+team.src = teamPNG
 
 //----------------------------------- Buttons block -----------------------------------//
 
