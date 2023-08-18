@@ -58,7 +58,7 @@ header {
 .header__call span, .header__phone-number, .header__dim {
     display: none;
 }
-.header__call {
+.header__call, .footer__call {
     background-color: hsla(246, 93%, 66%, 1);
     border-radius: 5px;
     height: 32.5px;

@@ -22,9 +22,15 @@ import barPNG from  "./img/form-bar.png"
 import donutPNG from "./img/form-donut.png"
 import cubePNG from "./img/form-cube.png"
 import likePNG from "./img/form-like.png"
+import telegramFooter from "./img/footer-telegram.svg"
+import whatsappFooter from "./img/footer-whatsapp.svg"
+import logoFooter from "./img/footer-logo.svg"
 
 const headerLogo = document.getElementById("header__logo")
 headerLogo.src = logo
+
+const footerLogo = document.getElementById("footer__logo")
+footerLogo.src = logoFooter
 
 const phoneTelegram = document.getElementById("phone__telegram")
 phoneTelegram.src = telegram
@@ -103,6 +109,15 @@ cube.src = cubePNG
 
 const like = document.getElementById("form-like-img")
 like.src = likePNG
+
+
+//----------------------------------- Footer block -----------------------------------//
+
+const footerPhoneTelegram = document.getElementById("footer-telegram")
+footerPhoneTelegram.src = telegramFooter
+
+const footerPhoneWhatsapp = document.getElementById("footer-whatsapp")
+footerPhoneWhatsapp.src = whatsappFooter
 
 
 //----------------------------------- Buttons block -----------------------------------//
