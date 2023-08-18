@@ -2,10 +2,13 @@
     background-color: $color-light;
     border-radius: 20px;
     color: $color-bg;
-    padding-inline: 13px;
+    padding-inline: 10px;
     text-align: center;
+    height: auto;
+    padding-bottom: 46px;
+    position: relative;
 
-    & input {
+    &__text-area {
         display: block;
         background-color: $color-light;
         font-size: $font-size--tiny;
@@ -27,15 +30,51 @@
         }
     }
 
-    & input[type="submit"] {
-        border-radius: 5px;
-        background-color: $color-bg;
-        color: $color-light;
-        font-size: $font-size--small;
-        font-weight: 700;
+    &__submit {
+        margin: 15px auto 35px auto;
+        display: block;
         width: 268px;
         height: 60px;
-        margin-top: 50px;
+
+        & input {
+            border: none;
+            border-radius: 5px;
+            background-color: $color-bg;
+            color: $color-light;
+            font-size: $font-size--small;
+            font-weight: 700;
+            width: 268px;
+            height: 60px;
+            
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        & + p {
+            display: inline;
+            font-size: $font-size--tiny;
+            font-weight: 400;
+
+            & span {
+                color: $color-form-border;
+            }
+        }
+    }
+
+    &__checkbox-style {
+        position: relative;
+        top: 3px;
+        display: inline-flex;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        background-color: $color-form-border;
+        margin-right: 13px;
     }
 
     &__heading {

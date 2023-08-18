@@ -1,7 +1,7 @@
 .team {
     margin-top: 90px;
 
-    & img {
+    &__img {
         width: 100%;
     }
 
@@ -27,6 +27,48 @@
     }
 
     &__form {
-        margin: 30px 13px 152px 13px;
+        margin: 30px 13px 13px 13px;
+    }
+
+    // ------------------------------ Image positions ------------------------------ //
+
+    &__form-rectangle-img {
+        display: block;
+        position: absolute;
+        width: 119px;
+        margin-top: -60px;
+        align-self: flex-start;
+    }
+    
+    &__form-bar-img {
+        display: block;
+        position: absolute;
+        width: 102px;
+        margin-top: -40px;
+        margin-right: -10px;
+        align-self: flex-end;
+    }
+    
+    &__form-donut-img {
+        display: block;
+        position: relative;
+        width: 41px;
+        margin-top: -25px;
+        margin-left: -20px;
+    }
+
+    &__form-cube-img {
+        display: block;
+        position: absolute;
+        width: 91px;
+        right: -12px;
+        bottom: -50px;
+    }
+
+    &__form-like-img {
+        display: block;
+        width: 220px;
+        align-self: flex-start;
+        margin-bottom: 26px;
     }
 }

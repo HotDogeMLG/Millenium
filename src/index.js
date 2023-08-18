@@ -17,6 +17,11 @@ import designPNG from "./img/design.png"
 import layoutPNG from "./img/layout.png"
 import cmsPNG from "./img/cms.png"
 import teamPNG from "./img/team.png"
+import rectanglePNG from "./img/form-rectangle.png"
+import barPNG from  "./img/form-bar.png"
+import donutPNG from "./img/form-donut.png"
+import cubePNG from "./img/form-cube.png"
+import likePNG from "./img/form-like.png"
 
 const headerLogo = document.getElementById("header__logo")
 headerLogo.src = logo
@@ -81,9 +86,24 @@ cms.src = cmsPNG
 
 //----------------------------------- Team block -----------------------------------//
 
-
 const team = document.getElementById("team-img")
 team.src = teamPNG
+
+const rectangle = document.getElementById("form-rectangle-img")
+rectangle.src = rectanglePNG
+
+const bar = document.getElementById("form-bar-img")
+bar.src = barPNG
+
+const donut = document.getElementById("form-donut-img")
+donut.src = donutPNG
+
+const cube = document.getElementById("form-cube-img")
+cube.src = cubePNG
+
+const like = document.getElementById("form-like-img")
+like.src = likePNG
+
 
 //----------------------------------- Buttons block -----------------------------------//
 
