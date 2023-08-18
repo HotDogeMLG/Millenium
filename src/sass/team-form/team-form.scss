@@ -55,7 +55,29 @@
         -moz-appearance: none;
         appearance: none;
 
-        & + p {
+        &:hover + .team-form__checkbox-style {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        &:checked {
+            & + .team-form__checkbox-style {
+                background-image: url(./img/checked.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                backdrop-filter: brightness(60%);
+            }
+
+            & ~ p span {
+                color: $color-bg;
+            }
+        }
+
+        &:focus + .team-form__checkbox-style {
+            border: 2px solid $color-main;
+        }
+
+        & ~ p {
             display: inline;
             font-size: $font-size--tiny;
             font-weight: 400;
@@ -75,6 +97,7 @@
         border-radius: 2px;
         background-color: $color-form-border;
         margin-right: 13px;
+        transition: transform 0.3s;
     }
 
     &__heading {
