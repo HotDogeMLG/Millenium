@@ -44,6 +44,11 @@ call.src = phoneIcon
 const advArrow = document.getElementById("adv__arrow")
 advArrow.src = arrow
 
+const keepScrolling = document.querySelectorAll(".keep-scrolling")
+    keepScrolling.forEach((element) => {
+        element.src = arrow
+    })
+
 
 //----------------------------------- Features block -----------------------------------//
 
@@ -126,7 +131,7 @@ document.getElementById("menu-button").addEventListener("click", () => {
     document.querySelector("header").classList.toggle("open")
 })
 document.getElementsByClassName("header__dim")[0].addEventListener("click", () => {
-    document.querySelector("header").classList.toggle("open")
+    document.querySelector("header").classList.remove("open")
 })
 
 document.getElementsByClassName("adv__arrow")[0].addEventListener("click", () => {
@@ -136,4 +141,5 @@ document.getElementsByClassName("adv__arrow")[0].addEventListener("click", () =>
     })
     document.querySelector(".adv__arrow").classList.toggle("adv__arrow_active")
     document.querySelector(".adv .price").classList.toggle("price_active")
+    document.querySelector(".main-body").classList.toggle("main-body_acitve")
 })

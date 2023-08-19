@@ -7,13 +7,37 @@
     margin: 0;
     margin-top: 150px;
     padding-bottom: 48px;
-
+    
+    @media (min-width:768px) {
+        text-align: start;
+    }
+    
     &__heading {
         margin-top: 27px;
+
+        @media (min-width:768px) {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        & .btn {
+            display: none;
+
+            @media (min-width:768px) {
+                display: block;
+                width: 50%;
+            }
+        }
         
         & p {
             font-size: $font-size--bigger-regular;
             font-weight: 700;
+
+            @media (min-width:768px) {
+                font-size: $font-size--big;
+            }
     
             &:first-child {
                 color: $color-bg;
@@ -39,6 +63,21 @@
         color: $color-bg;
         font-size: $font-size--tiny;
         font-weight: 800;
+
+        @media (min-width:768px) {
+            display: none;
+        }
+    }
+
+    &__info-wrapper {
+        margin-inline: 25px;
+
+        @media (min-width:768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 85%;
+        }
     }
 
     &__link-wrapper {
@@ -54,6 +93,10 @@
         color: $color-bg;
         font-size: $font-size--small;
         font-weight: 700;
+
+        @media (min-width:768px) {
+            width: 50%;
+        }
 
         & p {
             margin-bottom: 28px;
@@ -71,8 +114,10 @@
         font-size: $font-size--tiny;
         font-weight: 400;
         margin-top: 24px;
+        text-align: center;
 
-        & span {
+        & a {
+            color: currentColor;
             display: block;
             margin-top: 30px;
             text-decoration: underline;

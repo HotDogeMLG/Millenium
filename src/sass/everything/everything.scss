@@ -11,10 +11,13 @@ body {
     line-height: normal;
     background-color: white;
     color: hsla(246, 49%, 27%, 1);
-    height: auto !important;
+    height: auto;
+    width: 100vw;
 }
 html {
-    height: auto !important;
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 button {
@@ -310,6 +313,9 @@ a:active {
 .adv__arrow, .laptop-adv {
     display: none;
 }
+.keep-scrolling, .scrolling-arrows-container {
+    display: none;
+}
 
 /* ------------------------------ Laptop style ------------------------------ */
 
@@ -407,12 +413,13 @@ a:active {
 
     /* ------------------------- Laptop and desktop advantages ------------------------- */
 
-    .swiper {
+    .adv .swiper {
         display: none !important;
     }
     .main-body__advantages {
         display: flex;
         position: absolute;
+        z-index: 10;
         top: calc(30vw + 120px);
         left: 0px;
         width: 100vw;
@@ -469,12 +476,28 @@ a:active {
         transition: transform .5s;
     }
 
+    .scrolling-arrows-container {
+        display: block;
+        margin-top: 220px;
+        opacity: 1;
+        visibility: visible;
+        transition: transform .5s, opacity .3s, visibility .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .keep-scrolling {
+        display: block;
+        width: 75px;
+    }
+
     .adv__arrow {
         display: block;
         transition: transform .5s, rotate .5s;
     }
 
-    @media screen and (max-width: 1123px) {
+    @media screen and (max-width: 1124px) {
         .laptop-adv__item:nth-child(n+3):not(.laptop-adv__item_active){
             visibility: hidden;
             opacity: 0;
@@ -487,6 +510,11 @@ a:active {
         }
         .adv .price_active {
             transform: translateY(450px);
+
+            & + div {
+                opacity: 0;
+                visibility: hidden;
+            }
         }
         .adv .price_active:hover {
             transform: translateY(450px) scale(1.03);
@@ -502,6 +530,11 @@ a:active {
         }
         .adv .price_active {
             transform: translateY(220px);
+
+            & + div {
+                opacity: 0;
+                visibility: hidden;
+            }
         }
         .adv .price_active:hover {
             transform: translateY(220px) scale(1.03);
@@ -674,5 +707,9 @@ a:active {
 
     .adv__header {
         left: 130px;
+    }
+
+    .scrolling-arrows-container {
+        display: none;
     }
 }

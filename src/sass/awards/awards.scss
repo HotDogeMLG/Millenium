@@ -2,15 +2,27 @@
     background-color: $color-awards;
     border-radius: 10px;
     width: 340px;
+    align-self: center;
+
+    @media (min-width: 768px) {
+        position: relative;
+        top: 930px;
+        width: 100%;
+    }
 
     & .swiper {
         width: 280px;
         height: 430px;
+        border-radius: 10px;
         box-shadow: none;
-        border-radius: 0px;
         padding: 0px;
         margin: 0px;
         margin-top: 24px;
+
+        @media (min-width: 768px) {
+            width: 429px;
+            height: 607px;
+        }
     }
 
     & .swiper-slide {
@@ -29,6 +41,10 @@
 
         & > img {
             margin-bottom: 20px;
+
+            @media (min-width: 768px) {
+                width: 185px;
+            }
         }
     }
 
@@ -47,5 +63,10 @@
     &__certificate {
         width: 280px;
         height: 395px;
+        
+        @media (min-width: 768px) {
+            width: 429px;
+            height: 607px;
+        }
     }
 }

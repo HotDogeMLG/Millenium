@@ -1,6 +1,11 @@
 .research {
     margin: 110px 6px 19px 14px;
 
+    @media (min-width:768px) {
+        position: relative;
+        margin-top: 1025px;
+    }
+
     & p {
         font-size: $font-size--tiny;
         font-weight: 400;
@@ -11,11 +16,32 @@
         margin: 0px auto 50px auto;
         width: 95%;
         max-width: 450px;
+        transition: transform 0.5s;
+
+        
+        @media (min-width:768px) {
+            align-self: center;
+            margin: -70px 0px 0px 0px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__heading {
         font-size: $font-size--bigger-regular;
         font-weight: 800;
         margin: 0px 0px 30px 0px;
+        
+        @media (min-width:768px) {
+            font-size: $font-size--big;
+        }
+    }
+
+    &__article {
+        @media (min-width:768px) {
+            display: flex;
+        }
     }
 }

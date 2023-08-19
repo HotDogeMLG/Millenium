@@ -5,24 +5,35 @@
     margin: 50px 6px 50px 14px;
     min-width: 300px;
 
+    @media (min-width:768px) {
+        padding: 23px 28px 90px 49px;
+    }
+
     & h3 {
         margin: 0;
         & span {
             font-size: $font-size--tiny;
             font-weight: 700;
+
+            @media (min-width:768px) {
+                font-size: $font-size--big;
+            }
         }
     }
 
     & p {
         font-size: $font-size--tiny;
         font-weight: 400;
+
+        @media (min-width:768px) {
+            font-size: $font-size--bigger-regular;
+        }
     }
 
     & img {
         display: block;
-        margin: 20px auto 25px auto;
+        margin: 28px auto 25px auto;
         width: 90%;
-        max-width: 450px;
     }
 
     &__number {
@@ -38,6 +49,13 @@
         justify-content: center;
         align-items: center;
         margin-right: 18px;
+
+        @media (min-width:768px) {
+            width: 53px;
+            height: 53px;
+            font-size: $font-size--big;
+            margin-right: 50px;
+        }
     }
 
     &__hr {
@@ -55,5 +73,9 @@
         font-size: $font-size--bigger-regular;
         font-weight: 800;
         margin: 0;
+
+        @media (min-width:768px) {
+            font-size: $font-size--big;
+        }
     }
 }

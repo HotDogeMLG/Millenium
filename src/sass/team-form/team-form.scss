@@ -21,6 +21,12 @@
         outline: none;
         color: $color-bg;
 
+        @media (min-width:768px) {
+            font-size: $font-size--bigger-regular;
+            margin: 46px auto 35px auto;
+            width: 80%;
+        }
+
         &:focus {
             border-bottom: 2px solid $color-bg;
         }
@@ -36,6 +42,10 @@
         width: 268px;
         height: 60px;
 
+        @media (min-width:768px) {
+            width: 80%;
+        }
+
         & input {
             border: none;
             border-radius: 5px;
@@ -43,7 +53,7 @@
             color: $color-light;
             font-size: $font-size--small;
             font-weight: 700;
-            width: 268px;
+            width: 100%;
             height: 60px;
             
         }
@@ -84,6 +94,7 @@
 
             & span {
                 color: $color-form-border;
+                transition: color .5s;
             }
         }
     }
@@ -97,7 +108,7 @@
         border-radius: 2px;
         background-color: $color-form-border;
         margin-right: 13px;
-        transition: transform 0.3s;
+        transition: transform 0.3s, backdrop-filter .5s;
     }
 
     &__heading {
@@ -110,5 +121,9 @@
         font-size: $font-size--tiny;
         font-weight: 400;
         margin: 21px 0px 35px 0px;
+
+        @media (min-width:768px) {
+            margin-inline: 60px;
+        }
     }
 }
