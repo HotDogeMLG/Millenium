@@ -1,27 +1,43 @@
 .research {
     margin: 110px 6px 19px 14px;
+    width: 100%;
+    align-self: center;
 
     @media (min-width:768px) {
         position: relative;
         margin-top: 1025px;
     }
 
+    @media (min-width:1440px) {
+        width: 80%;
+        margin-top: 750px;
+    }
+
     & p {
         font-size: $font-size--tiny;
         font-weight: 400;
+        width: 40vw;
+
+        @media (min-width:1440px) {
+            font-size: $font-size--bigger-regular;
+        }
     }
 
     & img {
         display: block;
         margin: 0px auto 50px auto;
-        width: 95%;
-        max-width: 450px;
         transition: transform 0.5s;
+        width: 40vw;
 
         
         @media (min-width:768px) {
             align-self: center;
             margin: -70px 0px 0px 0px;
+            max-width: 450px;
+        }
+
+        @media (min-width:1440px) {
+            max-width: 750px;
         }
 
         &:hover {
@@ -37,11 +53,16 @@
         @media (min-width:768px) {
             font-size: $font-size--big;
         }
+
+        @media (min-width:1440px) {
+            font-size: $font-size--very-big;
+        }
     }
 
     &__article {
         @media (min-width:768px) {
             display: flex;
+            justify-content: space-between;
         }
     }
 }

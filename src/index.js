@@ -70,11 +70,15 @@ crm.src = crmPNG
 const awards = document.getElementById("awards-img")
 awards.src = awardsPNG
 
-const certificate1 = document.getElementById("certificate1-img")
-certificate1.src = certificate1PNG
+const certificate1 = document.querySelectorAll(".certificate1-img")
+    certificate1.forEach((element) => {
+        element.src = certificate1PNG
+    })
 
-const certificate2 = document.getElementById("certificate2-img")
-certificate2.src = certificate2PNG
+const certificate2 = document.querySelectorAll(".certificate2-img")
+    certificate2.forEach((element) => {
+        element.src = certificate2PNG
+    })
 
 const research = document.getElementById("research-img")
 research.src = researchPNG

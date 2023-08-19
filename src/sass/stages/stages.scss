@@ -68,6 +68,11 @@
 
 .main-body__stages {
     margin: 7px;
+    
+    @media (min-width:1440px) {
+        align-self: center;
+        width: 80%;
+    }
 
     & h2 {
         font-size: $font-size--bigger-regular;
