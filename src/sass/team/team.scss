@@ -1,5 +1,6 @@
 .team {
     margin-top: 90px;
+    position: relative;
 
     @media (min-width:1440px) {
         align-self: center;
@@ -107,18 +108,18 @@
         position: absolute;
         width: 102px;
         margin-top: -40px;
-        margin-right: -10px;
+        margin-right: 35px;
         align-self: flex-end;
 
         @media (min-width:768px) {
             width: 174px;
             margin-top: 400px;
-            margin-right: -100px;
+            left: 80%;
         }
 
         @media (min-width:1440px) {
             margin-bottom: 150px;
-            right: 67px;
+            left: 90%;
         }
     }
     
@@ -163,7 +164,7 @@
 
         @media (min-width:1440px) {
             position: absolute;
-            bottom: 20px;
+            bottom: 15px;
             left: 0;
             width: 430px;
         }

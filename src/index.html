@@ -36,7 +36,6 @@
                 <div>+7 (495) 792-66-69 <br> пн-пт 10:00-19:00</div>
             </section>
         </nav>
-        <div class="header__dim"></div>
         <div class="header__logo">
             <a href="index.html"> <img src="" alt="Millenium" id="header__logo"> </a>
         </div>
@@ -48,10 +47,48 @@
             </span>
             <span class="phone__calling-time">Ежедневно в 09:00 до 18:00</span>
         </section>
-        <button class="header__call btn"> 
+        <button class="header__call btn make-a-call"> 
             <img src="" id="call" alt="Заказать звонок">
             <span> Заказать звонок </span>
         </button>
+
+        <section class="header__consultation consultation">
+            <button class="consultation__exit">
+                <img src="" id="cross-img">
+            </button>
+            <h3 class="consultation__heading">Заявка на консультацию</h3>
+            <form>
+                <label>
+                    Ваше имя <br>
+                    <input type="text" placeholder="Введите ваше имя" 
+                    class="consultation__text-area">                    
+                </label>
+                
+                <label>
+                    Номер телефона <br>
+                    <input type="tel" placeholder="+7 (999) 999 99 99"
+                    class="consultation__text-area">                    
+                </label>
+
+                <label class="consultation__submit">
+                    <input type="submit" class="btn">                    
+                </label>
+            </form>
+
+            <p class="consultation__info">
+                Нажимая на кнопку «Отправить заявку», я даю согласие на обработку 
+                персональных данных и соглашаюсь c политикой конфиденциальности
+            </p>
+
+            <div class="consultation__decoration">
+                <img src="" id="book-img">
+                <div class="consultation__lock">
+                    <img src="" id="lock-img">
+                </div>
+            </div>
+        </section>
+        
+        <div class="header__dim"></div>
     </header>
 
     <!--Main body-->
@@ -536,14 +573,14 @@
                 <p>Напишите нам</p>
                 <p class="light-part">info@millenium.ru</p>
             </div>
-            <button class="footer__call btn"> 
+            <button class="footer__call btn make-a-call"> 
                 <span> Заказать звонок </span>
             </button>
         </section>
 
         <div class="footer__hr"></div>
 
-        <button class="footer__call btn"> 
+        <button class="footer__call btn make-a-call"> 
             <span> Заказать звонок </span>
         </button>
 

@@ -25,6 +25,9 @@ import likePNG from "./img/form-like.png"
 import telegramFooter from "./img/footer-telegram.svg"
 import whatsappFooter from "./img/footer-whatsapp.svg"
 import logoFooter from "./img/footer-logo.svg"
+import bookPNG from "./img/book.png"
+import lockSVG from "./img/lock.svg"
+import crossSVG from "./img/cross.svg"
 
 const headerLogo = document.getElementById("header__logo")
 headerLogo.src = logo
@@ -131,11 +134,36 @@ footerPhoneWhatsapp.src = whatsappFooter
 
 //----------------------------------- Buttons block -----------------------------------//
 
+const book = document.getElementById("book-img")
+book.src = bookPNG
+
+const lock = document.getElementById("lock-img")
+lock.src = lockSVG
+
+const cross = document.getElementById("cross-img")
+cross.src = crossSVG
+
+
+//----------------------------------- Buttons block -----------------------------------//
+
 document.getElementById("menu-button").addEventListener("click", () => {
     document.querySelector("header").classList.toggle("open")
 })
+
+const makeCallElems = document.querySelectorAll(".make-a-call")
+makeCallElems.forEach((element) => {
+    element.addEventListener("click", () => {
+        document.querySelector(".consultation").classList.toggle("consultation_active")
+    })  
+})
+
+document.getElementsByClassName("consultation__exit")[0].addEventListener("click", () => {
+    document.querySelector(".consultation").classList.remove("consultation_active")
+})
+
 document.getElementsByClassName("header__dim")[0].addEventListener("click", () => {
     document.querySelector("header").classList.remove("open")
+    document.querySelector(".consultation").classList.remove("consultation_active")
 })
 
 document.getElementsByClassName("adv__arrow")[0].addEventListener("click", () => {
