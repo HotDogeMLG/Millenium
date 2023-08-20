@@ -11,6 +11,7 @@
 
     & h3 {
         margin: 0;
+
         & span {
             font-size: $font-size--tiny;
             font-weight: 700;
@@ -24,6 +25,7 @@
     & p {
         font-size: $font-size--tiny;
         font-weight: 400;
+        margin-top: 14px;
 
         @media (min-width:768px) {
             font-size: $font-size--bigger-regular;
@@ -63,6 +65,10 @@
         height: 1px;
         margin-inline: 5px;
         margin-top: 22px;
+
+        @media (min-width:768px) {
+            margin-bottom: 26px;
+        }
     }
 }
 

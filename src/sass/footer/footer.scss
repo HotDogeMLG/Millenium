@@ -28,6 +28,11 @@
             @media (min-width:768px) {
                 display: block;
                 width: 50%;
+                max-width: 400px;
+            }
+
+            @media (min-width:1440px) {
+                align-self: flex-end;
             }
         }
         
@@ -38,9 +43,20 @@
             @media (min-width:768px) {
                 font-size: $font-size--big;
             }
+
+            @media (min-width:1440px) {
+                font-size: $font-size--very-big;
+            }
     
             &:first-child {
                 color: $color-bg;
+            }
+
+            &:nth-child(2) {
+                @media (min-width:1440px) {
+                    font-size: $font-size--super-big;
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -96,6 +112,11 @@
 
         @media (min-width:768px) {
             width: 50%;
+        }
+
+        @media (min-width:1440px) {
+            font-size: $font-size--bigger-regular;
+            max-width: 300px;
         }
 
         & p {

@@ -8,6 +8,10 @@
     padding-bottom: 46px;
     position: relative;
 
+    @media (min-width:1440px) {
+        max-width: 750px;
+    }
+
     &__text-area {
         display: block;
         background-color: $color-light;

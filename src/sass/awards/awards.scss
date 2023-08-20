@@ -96,6 +96,14 @@
         }
     }
 
+    &__certificate_desktop {
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
     &_desktop {
         display: none;
 

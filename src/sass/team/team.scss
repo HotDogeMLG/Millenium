@@ -1,6 +1,13 @@
 .team {
     margin-top: 90px;
 
+    @media (min-width:1440px) {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__img {
         width: 100%;
     }
@@ -16,12 +23,28 @@
         @media (min-width:768px) {
             padding: 68px 64px 60px 64px;
         }
+        
+        @media (min-width:1440px) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 41px 98px 180px 98px;
+            width: 80%;
+            position: relative;
+        }
     }
 
     &__heading {
         font-size: $font-size--big;
         font-weight: 800;
         margin: 40px 0px 30px 0px;
+
+        @media (min-width:1440px) {
+            font-size: $font-size--very-big;
+            max-width: 220px;
+            margin-top: 0;
+            line-height: 166%;
+        }
     }
 
     &__info {
@@ -32,6 +55,11 @@
         @media (min-width:768px) {
             font-size: $font-size--regular;
         }
+
+        @media (min-width:1440px) {
+            font-size: $font-size--bigger-regular;
+            text-align: start;
+        }
     }
 
     &__form {
@@ -39,6 +67,18 @@
 
         @media (min-width:768px) {
             margin: 60px 60px 0px 60px;
+        }
+
+        @media (min-width:1440px) {
+            margin: 0;
+        }
+    }
+
+    &__text-wrapper {
+        @media (min-width:1440px) {
+            text-align: start;
+            align-self: flex-start;
+            width: 75%;
         }
     }
 
@@ -55,6 +95,11 @@
             margin-top: -140px;
             width: 146px;
         }
+
+        @media (min-width:1440px) {
+            margin-top: -110px;
+            left: 350px;
+        }
     }
     
     &__form-bar-img {
@@ -69,6 +114,11 @@
             width: 174px;
             margin-top: 400px;
             margin-right: -100px;
+        }
+
+        @media (min-width:1440px) {
+            margin-bottom: 150px;
+            right: 67px;
         }
     }
     
@@ -92,6 +142,11 @@
             bottom: -160px;
             width: 110px;
         }
+
+        @media (min-width:1440px) {
+            width: 165px;
+            bottom: -250px;
+        }
     }
 
     &__form-like-img {
@@ -104,6 +159,13 @@
             width: 330px;
             margin-bottom: 0;
             margin-top: 30px;
+        }
+
+        @media (min-width:1440px) {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 430px;
         }
     }
 }
