@@ -173,5 +173,5 @@ document.getElementsByClassName("adv__arrow")[0].addEventListener("click", () =>
     })
     document.querySelector(".adv__arrow").classList.toggle("adv__arrow_active")
     document.querySelector(".adv .price").classList.toggle("price_active")
-    document.querySelector(".main-body").classList.toggle("main-body_acitve")
+    document.querySelector(".main-body").classList.toggle("main-body_active")
 })

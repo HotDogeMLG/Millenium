@@ -7,8 +7,11 @@
     margin: 0;
     margin-top: 150px;
     padding-bottom: 48px;
+    position: relative;
+    transition: transform .5s;
     
     @media (min-width:768px) {
+        top: 500px;
         text-align: start;
     }
     

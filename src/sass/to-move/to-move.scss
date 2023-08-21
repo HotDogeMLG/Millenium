@@ -1,0 +1,40 @@
+.to-move {
+    position: relative;
+    height: auto;
+    transition: transform .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        top: 500px;
+    }
+
+    @media screen and (min-width: 2249px) {
+        top: 300px;
+    }
+}
+
+.main-body_active {
+    & .to-move {
+        @media (max-width: 1124px) {
+            transform: translateY(440px);
+        }
+
+        @media (min-width: 1124px) {
+            transform: translateY(220px);
+        }
+    }
+
+    & + .footer {
+        @media (max-width: 1124px) {
+            transform: translateY(440px);
+        }
+
+        @media (min-width: 1124px) {
+            transform: translateY(220px);
+        }
+    }
+}

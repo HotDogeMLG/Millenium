@@ -106,20 +106,22 @@
     &__form-bar-img {
         display: block;
         position: absolute;
-        width: 102px;
+        width: 80px;
         margin-top: -40px;
         margin-right: 35px;
         align-self: flex-end;
 
         @media (min-width:768px) {
-            width: 174px;
+            width: 130px;
             margin-top: 400px;
-            left: 80%;
+            margin-right: 0px;
+            right: 20px;
         }
 
         @media (min-width:1440px) {
+            width: 150px;
             margin-bottom: 150px;
-            left: 90%;
+            right: 10px;
         }
     }
     

@@ -336,9 +336,6 @@ a:active {
 .adv__arrow, .laptop-adv {
     display: none;
 }
-.keep-scrolling, .scrolling-arrows-container {
-    display: none;
-}
 
 /* ------------------------------ Laptop style ------------------------------ */
 
@@ -485,22 +482,6 @@ a:active {
     .main-body__advantages .price {
         position: static;
         transition: transform .5s;
-    }
-
-    .scrolling-arrows-container {
-        display: block;
-        margin-top: 220px;
-        opacity: 1;
-        visibility: visible;
-        transition: transform .5s, opacity .3s, visibility .3s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-    .keep-scrolling {
-        display: block;
-        width: 75px;
     }
 
     .adv__arrow {
@@ -720,9 +701,5 @@ a:active {
 
     .adv__header {
         left: 130px;
-    }
-
-    .scrolling-arrows-container {
-        display: none;
     }
 }
