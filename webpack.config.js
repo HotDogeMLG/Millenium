@@ -9,7 +9,13 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name][contenthash].js",
-        clean: true
+        assetModuleFilename: "[name][ext]",
+        clean: true,
+    },
+    performance: {
+        hints: false,
+        maxAssetSize: 512000,
+        maxEntrypointSize: 512000,  
     },
     module: {
         rules: [
